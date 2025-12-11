@@ -1,0 +1,28 @@
+name: Issue Closed Notification
+
+on:
+  issues:
+    types: [closed]
+
+jobs:
+  send-email:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send email notification
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.qq.com
+          server_port: 465
+          username: 1028511239@qq.com
+          password: MassTransit@12ss
+          subject: 'Issue Closed: ${{ github.event.issue.title }}'
+          to: 1028511239@qq.com
+          from: 1028511239@qq.com
+          body: |
+            An issue has been closed in repository ${{ github.repository }}.
+            
+            Issue Title: ${{ github.event.issue.title }}
+            Issue Link: ${{ github.event.issue.html_url }}
+            Closed by: ${{ github.event.issue.closed_by.login }}
+            
+            View the issue at: ${{ github.event.issue.html_url }}
