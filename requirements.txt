@@ -1,0 +1,10 @@
+# Python dependencies for MyCopilotAutoCodeDemo
+# 我的 Copilot 自动编码工具演示项目的 Python 依赖
+
+# No external dependencies required for basic examples
+# The examples use only Python standard library
+
+# Optional: For development and testing
+# pytest>=7.0.0
+# black>=22.0.0
+# flake8>=4.0.0
