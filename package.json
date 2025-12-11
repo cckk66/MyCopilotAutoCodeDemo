@@ -1,0 +1,26 @@
+{
+  "name": "mycopilot-autocoding-demo",
+  "version": "1.0.0",
+  "description": "我的 Copilot 自动编码工具演示项目 | My Copilot Auto-Coding Tool Demo",
+  "main": "javascript/calculator.js",
+  "scripts": {
+    "demo:calculator": "node javascript/calculator.js",
+    "demo:dataprocessor": "node javascript/dataProcessor.js",
+    "demo:utils": "node javascript/utils.js",
+    "demo:all": "npm run demo:calculator && npm run demo:dataprocessor && npm run demo:utils"
+  },
+  "keywords": [
+    "copilot",
+    "ai",
+    "coding",
+    "demo",
+    "automation",
+    "github-copilot"
+  ],
+  "author": "cckk66",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cckk66/MyCopilotAutoCodeDemo.git"
+  }
+}
