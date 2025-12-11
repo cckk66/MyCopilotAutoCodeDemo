@@ -23,6 +23,4 @@ jobs:
             
             Issue Title: ${{ github.event.issue.title }}
             Issue Link: ${{ github.event.issue.html_url }}
-            Closed by: ${{ github.event.issue.closed_by.login }}
-            
-            View the issue at: ${{ github.event.issue.html_url }}
+            Closed by: ${{ github.actor }}
