@@ -15,12 +15,11 @@ cd HelloWorld
 dotnet run
 ```
 
-Or build and run separately:
+Or to explicitly build first (useful for checking for compilation errors):
 
 ```bash
 cd HelloWorld
 dotnet build
-dotnet run
 ```
 
 ## Project Structure
