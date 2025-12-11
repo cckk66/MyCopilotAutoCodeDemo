@@ -7,6 +7,8 @@ on:
 jobs:
   send-email:
     runs-on: ubuntu-latest
+    permissions:
+      issues: read
     steps:
       - name: Send email notification
         uses: dawidd6/action-send-mail@v3
